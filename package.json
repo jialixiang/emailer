@@ -1,0 +1,18 @@
+{
+  "name": "emailer",
+  "version": "1.0.0",
+  "description": "package to provide an abstraction between multiple email service providers",
+  "main": "lib/emailer.js",
+  "dependencies": {
+    "sendgrid": "5.1.0",
+    "mailgun-js": "0.11.2",
+    "node-ses": "2.0.5"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amanda Xiang",
+  "license": "ISC"
+}
