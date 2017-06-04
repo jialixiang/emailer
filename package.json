@@ -9,10 +9,18 @@
     "node-ses": "2.0.5"
   },
   "devDependencies": {
+    "mocha": "3.4.2",
+    "chai": "4.0.1",
+    "sinon": "2.3.2",
+    "when": "3.7.8"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Amanda Xiang",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jialixiang/emailer"
+  },
   "license": "ISC"
 }
