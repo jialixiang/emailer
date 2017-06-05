@@ -16,7 +16,7 @@ let fakeOptions = {
   content: 'Hello World!',
 };
 
-describe('AmazonSESService Functions', function() {
+describe('AmazonSESService Functions', () => {
 
   let expectedResponse = {
     statusCode: 202,
@@ -24,54 +24,50 @@ describe('AmazonSESService Functions', function() {
     headers: '',
   };
 
-  beforeEach(function() {
+  beforeEach(() => {
     sinon.stub(service.client, 'sendEmail').yields(null, null, expectedResponse);
   });
 
-  afterEach(function () {
+  afterEach(() => {
     service.client.sendEmail.restore();
   });
 
-  it("Stub to simulate a succeeded call of client API", function () { 
+  it('Stub to simulate a succeeded call of client API', () => {
     // Call the method and run the assertion
-    return service.sendEmail(fakeOptions).then(
-      actualResponse => { 
-        expect(actualResponse).to.equal(expectedResponse);
-      },
-      error => {
-        expect(error).to.equal(null);
-      });
+    return service.sendEmail(fakeOptions).then(actualResponse => {
+      expect(actualResponse).to.equal(expectedResponse);
+    }, error => {
+      expect(error).to.equal(null);
+    });
   });
 
 });
 
 
-describe('AmazonSESService Errors', function() {
+describe('AmazonSESService Errors', () => {
 
-  let expectedError = new Error("Sending email failed!");
+  let expectedError = new Error('Sending email failed!');
   let expectedResponse = {
     statusCode: 401,
     body: '',
     headers: '',
   };
 
-  beforeEach(function() {
+  beforeEach(() => {
     sinon.stub(service.client, 'sendEmail').yields(expectedError, null, expectedResponse);
   });
 
-  afterEach(function () {
+  afterEach(() => {
     service.client.sendEmail.restore();
   });
 
-  it("Stub to simulate a failed call of client API", function () { 
+  it('Stub to simulate a failed call of client API', () => {
     // Call the method and run the assertion
-    return service.sendEmail(fakeOptions).then(
-      actualResponse => { 
-        expect(actualResponse).to.equal(expectedResponse);
-      },
-      error => {
-        expect(error).to.equal(expectedError);
-      });
+    return service.sendEmail(fakeOptions).then(actualResponse => {
+      expect(actualResponse).to.equal(expectedResponse);
+    }, error => {
+      expect(error).to.equal(expectedError);
+    });
   });
 
 });

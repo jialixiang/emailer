@@ -1,12 +1,13 @@
 {
-  "name": "emailer",
+  "name": "emailer-js",
   "version": "1.0.0",
   "description": "package to provide an abstraction between multiple email service providers",
   "main": "lib/emailer.js",
   "dependencies": {
     "sendgrid": "5.1.0",
     "mailgun-js": "0.11.2",
-    "node-ses": "2.0.5"
+    "node-ses": "2.0.5",
+    "validator": "7.0.0"
   },
   "devDependencies": {
     "mocha": "3.4.2",
@@ -15,7 +16,7 @@
     "when": "3.7.8"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --timeout 20000"
   },
   "author": "Amanda Xiang",
   "repository": {
