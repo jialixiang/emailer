@@ -1,6 +1,6 @@
 {
   "name": "emailer-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "package to provide an abstraction between multiple email service providers",
   "main": "lib/emailer.js",
   "dependencies": {
@@ -21,7 +21,7 @@
   "author": "Amanda Xiang",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jialixiang/emailer"
+    "url": "https://github.com/jialixiang/emailer-js"
   },
   "license": "ISC"
 }
