@@ -16,6 +16,7 @@ nodejs
 ### Setup Environment Variables
 
 Update the development environment with your email service API keys
+
 e.g. [SENDGRID_API_KEY] on (https://app.sendgrid.com/settings/api_keys)
 
 ```bash
@@ -73,14 +74,15 @@ emailer.sendEmail(options).then((val) => {
 
 ## TODO
 
-* [Add Mailchimp/Mandrill Support] - On April 27, Mandrill became a paid MailChimp add-on. Keep receiving "Acceptable Use Violation Detected"...
-* [Rate Limit of Sending Emails]
-* [Support More Complex Email] - html body, cc, bcc, attachment, etc
-* [More Test Cases]
+* **Add Mailchimp/Mandrill Support** - On April 27, Mandrill became a paid MailChimp add-on. Keep receiving "Acceptable Use Violation Detected"...
+* **[Rate Limit of Sending Emails**
+* **Support More Complex Email** - html body, cc, bcc, attachment, etc
+* **More Test Cases**
 
 ## Authors
 
 * **Amanda Xiang** - *Initial work* - [Amanda Xiang](https://github.com/jialixiang)
+See also the list of [contributors](https://github.com/jialixiang/emailer-js/contributors) who participated in this project.
 
 ## License
 
