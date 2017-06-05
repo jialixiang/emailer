@@ -4,6 +4,8 @@ npm package for sending email through multiple service provider
 
 If one of the services goes down, it can quickly failover to a another provider without affecting customers
 
+![](https://cloud.githubusercontent.com/assets/4859095/26795459/4d1b453a-4a58-11e7-9147-98dfedd46680.png)
+
 ## Getting Started
 
 ### Prerequisites
@@ -35,7 +37,7 @@ source ./emailer.env
 ### Installing
 
 ```
-npm install --save email-js
+npm install --save emailer-js
 ```
 
 ## Running the tests
@@ -74,8 +76,8 @@ emailer.sendEmail(options).then((val) => {
 ## TODO
 
 * **Add Mailchimp/Mandrill Support** - On April 27, Mandrill became a paid MailChimp add-on. Keep receiving "Acceptable Use Violation Detected"...
-* **[Rate Limit of Sending Emails**
-* **Support More Complex Email** - html body, cc, bcc, attachment, etc
+* **Rate Limit of Sending Emails**
+* **Support More Complex Email** - html body, cc, bcc, attachment, contentType, etc
 * **More Test Cases**
 
 ## Authors
