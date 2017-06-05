@@ -83,6 +83,7 @@ emailer.sendEmail(options).then((val) => {
 ## Authors
 
 * **Amanda Xiang** - *Initial work* - [Amanda Xiang](https://github.com/jialixiang)
+
 See also the list of [contributors](https://github.com/jialixiang/emailer-js/contributors) who participated in this project.
 
 ## License
