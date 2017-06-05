@@ -1,11 +1,10 @@
 # Email Service API
 
 npm package for sending email through multiple service provider
+
 If one of the services goes down, it can quickly failover to a another provider without affecting customers
 
 ## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
