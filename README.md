@@ -42,6 +42,7 @@ npm install --save emailer-js
 
 ## Running the tests
 
+You need to set the NODE_ENV environment variable to 'test' and install devDependencies before you run test
 ```
 npm test
 ```
@@ -75,6 +76,7 @@ emailer.sendEmail(options).then((val) => {
 
 ## TODO
 
+* **Improve Documentation**
 * **Add Mailchimp/Mandrill Support** - On April 27, Mandrill became a paid MailChimp add-on. Keep receiving "Acceptable Use Violation Detected"...
 * **Rate Limit of Sending Emails**
 * **Support More Complex Email** - html body, cc, bcc, attachment, contentType, etc
