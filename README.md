@@ -89,4 +89,3 @@ emailer.sendEmail(options).then((val) => {
 See also the list of [contributors](https://github.com/jialixiang/emailer-js/contributors) who participated in this project.
 
 ## License
-

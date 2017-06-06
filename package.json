@@ -1,6 +1,6 @@
 {
   "name": "emailer-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "package to provide an abstraction between multiple email service providers",
   "main": "lib/emailer.js",
   "dependencies": {
